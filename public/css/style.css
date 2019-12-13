@@ -15,7 +15,9 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#faaca8",endColorstr="#ddd6f3",GradientType=1); 
 }
 #wave {
-    background-image: url("../../background_wave.png");
+    background-image: url("../images/background_wave.png");
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100%;
     height: 1000px;
     position: relative;
@@ -54,6 +56,7 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 25px;
+    border: solid 3px black;
     background-color: whitesmoke;
     box-shadow: 1px 1px 14px grey;
     color: black;
@@ -62,14 +65,15 @@ body {
     transition-duration: 0.2s;
     width: 320px;
     height: 320px;
-    margin-top: -5px;
-    box-shadow: 1px 1px 24px grey;
+    margin-top: -7px;
+    box-shadow: 10px 34px 24px grey;
+    border: solid 3px white;
+    color: white;
 }
 .container_menu_sommaire:active {
     transition-duration: 0.2s ease;
     width: 300px;
     height: 300px;
-    background-color: royalblue;
     color: white;
     /* margin-top: 15px; */
 }
@@ -81,7 +85,20 @@ body {
 .container_menu_sommaire span {
     display: flex;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 10px;
     font-weight: 800;
     font-size: 40px;
 }
+#html_gradient:hover , #html_gradient:active {
+    background: rgb(255,60,172);
+    background: linear-gradient(225deg, rgb(247, 99, 0) 0%, rgb(151, 19, 19) 100%); 
+}
+#css_gradient:hover , #css_gradient:active {
+    background: rgb(8,174,234);
+    background: linear-gradient(48deg, rgba(8,174,234,1) 0%, rgba(42,245,152,1) 100%); 
+}
+#javascript_gradient:hover , #javascript_gradient:active {
+    background: rgb(246,214,78);
+    background: linear-gradient(225deg, rgba(246,214,78,1) 0%, rgba(247,146,28,1) 100%); 
+}
+
