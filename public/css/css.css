@@ -62,7 +62,7 @@ h2 {
     height: 300px;
     margin-top: 50px;
 }
-.toggle {
+.toggle_css {
     margin-top: 50px;
     transition-duration: 0.2s;
     border-radius: 25px;

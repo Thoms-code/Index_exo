@@ -5,12 +5,12 @@ let toggleGrandAnimation = document.getElementsByClassName("toggle_grand_animati
 let togglePetitAnimation = document.getElementsByClassName("toggle_petit_animation")[0];
 let containerSoloAnimation = document.getElementsByClassName("container_solo_css_animation")[0];
 buttonOuvrirAnimation.addEventListener("click" , () => {
-    containerSoloAnimation.classList.toggle("toggle");
+    containerSoloAnimation.classList.toggle("toggle_css");
     togglePetitAnimation.setAttribute("id" , "display_none");
     toggleGrandAnimation.id = "";
 })
 buttonFermerAnimation.addEventListener("click" , () => {
-    containerSoloAnimation.classList.toggle("toggle");
+    containerSoloAnimation.classList.toggle("toggle_css");
     toggleGrandAnimation.id = "display_none";
     togglePetitAnimation.id = "";
 })
