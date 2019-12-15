@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800,900&display=swap');
+.display_none {
+    display: none;
+}
+#display_none {
+    display: none;
+}
 body {
     margin: 0;
     background-color: #F6F0F0;
@@ -27,4 +33,110 @@ body {
     text-align: center;
     position: relative;
     top: 100px;
+}
+/* Main */
+main {
+    margin-top: 140px;
+}
+h2 {
+    text-align: center;
+    position: relative;
+    top: -180px;
+    font-weight: 800;
+    font-size: 60px;
+}
+#container_menu_javascript {
+    display: flex;
+    position: relative;
+    top: -140px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.container_solo_javascript ,
+.container_solo_javascript_boucle ,
+.container_solo_javascript_conditions ,
+.container_solo_javascript_fonctions ,
+.container_solo_javascript_objet {
+    border-radius: 25px;
+    box-shadow: 1px 1px 15px grey;
+    border: solid 3px black;
+    width: 28%;
+    height: 300px;
+    margin-top: 50px;
+}
+.toggle_javascript {
+    margin-top: 50px;
+    transition-duration: 0.2s;
+    border-radius: 25px;
+    box-shadow: 1px 1px 35px grey;
+    border: solid 3px black;
+    background: rgb(246,214,78);
+    background: linear-gradient(225deg, rgba(246,214,78,1) 0%, rgba(247,146,28,1) 100%);
+    width: 60%;
+    height: 300px;
+}
+.container_solo_javascript_boucle:hover ,
+.container_solo_javascript_conditions:hover ,
+.container_solo_javascript_fonctions:hover ,
+.container_solo_javascript_objet:hover {
+    transition-duration: 0.2s;
+    box-shadow: 1px 1px 35px grey;
+    background: rgb(246,214,78);
+    background: linear-gradient(225deg, rgba(246,214,78,1) 0%, rgba(247,146,28,1) 100%);
+}
+.container_solo_javascript_boucle p ,
+.container_solo_javascript_conditions p ,
+.container_solo_javascript_fonctions p ,
+.container_solo_javascript_objet p {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+.toggle_grand_javascript_boucle ,
+.toggle_grand_javascript_conditions ,
+.toggle_grand_javascript_fonctions ,
+.toggle_grand_javascript_objet {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.toggle_petit_javascript_boucle ,
+.toggle_petit_javascript_conditions ,
+.toggle_petit_javascript_fonctions ,
+.toggle_petit_javascript_objet {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+.toggle_petit_javascript_boucle button ,
+.toggle_petit_javascript_conditions button ,
+.toggle_petit_javascript_fonctions button ,
+.toggle_petit_javascript_objet button {
+    padding: 10px 25px;
+    background-color: black;
+    border: solid 3px black;
+    font-size: 20px;
+    font-weight: 700;
+    color: whitesmoke;
+    border-radius: 35px;
+}
+.toggle_grand_javascript_boucle button ,
+.toggle_grand_javascript_conditions button ,
+.toggle_grand_javascript_fonctions button ,
+.toggle_grand_javascript_objet button {
+    margin: 10px;
+    padding: 10px 25px;
+    background-color: transparent;
+    border: solid 3px black;
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    border-radius: 35px;
+}
+#button_fermer_javascript_boucle ,
+#button_fermer_javascript_conditions ,
+#button_fermer_javascript_fonctions ,
+#button_fermer_javascript_objet {
+    background-color: black;
+    color: whitesmoke;
 }

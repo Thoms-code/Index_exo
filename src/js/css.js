@@ -17,3 +17,18 @@ buttonFermerAnimation.addEventListener("click" , () => {
 /* FIN ANIMATION */
 
 /* SELECTEURS */
+let buttonOuvrirSelecteur = document.getElementById("button_ouvrir_selecteur");
+let buttonFermerSelecteur = document.getElementById("button_fermer_selecteur");
+let toggleGrandSelecteur = document.getElementsByClassName("toggle_grand_selecteur")[0];
+let togglePetitSelecteur = document.getElementsByClassName("toggle_petit_selecteur")[0];
+let containerSoloSelecteur = document.getElementsByClassName("container_solo_css_selecteur")[0];
+buttonOuvrirSelecteur.addEventListener("click" , () => {
+    containerSoloSelecteur.classList.toggle("toggle_css");
+    togglePetitSelecteur.setAttribute("id" , "display_none");
+    toggleGrandSelecteur.id = "";
+})
+buttonFermerSelecteur.addEventListener("click" , () => {
+    containerSoloSelecteur.classList.toggle("toggle_css");
+    toggleGrandSelecteur.id = "display_none";
+    togglePetitSelecteur.id = "";
+})

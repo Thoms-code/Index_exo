@@ -54,7 +54,8 @@ h2 {
     flex-wrap: wrap;
 }
 .container_solo_css ,
-.container_solo_css_animation {
+.container_solo_css_animation ,
+.container_solo_css_selecteur {
     border-radius: 25px;
     box-shadow: 1px 1px 15px grey;
     border: solid 3px black;
@@ -74,29 +75,34 @@ h2 {
     height: 300px;
 }
 .container_solo_css:hover ,
-.container_solo_css_animation:hover {
+.container_solo_css_animation:hover ,
+.container_solo_css_selecteur:hover {
     transition-duration: 0.2s;
     box-shadow: 1px 1px 35px grey;
     background: rgb(8,174,234);
     background: linear-gradient(48deg, rgba(8,174,234,1) 0%, rgba(42,245,152,1) 100%);
 }
 .container_solo_css p ,
-.container_solo_css_animation p {
+.container_solo_css_animation p ,
+.container_solo_css_selecteur p {
     font-size: 45px;
     font-weight: 700;
     text-align: center;
 }
-.toggle_grand_animation {
+.toggle_grand_animation ,
+.toggle_grand_selecteur {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.toggle_petit_animation {
+.toggle_petit_animation ,
+.toggle_petit_selecteur {
     display: flex;
     margin-top: 15px;
     justify-content: center;
 }
-.toggle_petit_animation button {
+.toggle_petit_animation button ,
+.toggle_petit_selecteur button {
     padding: 10px 25px;
     background-color: black;
     border: solid 3px black;
@@ -105,7 +111,8 @@ h2 {
     color: whitesmoke;
     border-radius: 35px;
 }
-.toggle_grand_animation button {
+.toggle_grand_animation button ,
+.toggle_grand_selecteur button {
     margin: 10px;
     padding: 10px 25px;
     background-color: transparent;
@@ -115,7 +122,8 @@ h2 {
     color: black;
     border-radius: 35px;
 }
-#button_fermer_animation {
+#button_fermer_animation ,
+#button_fermer_selecteur {
     background-color: black;
     color: whitesmoke;
 }
